@@ -1,0 +1,124 @@
+.books {
+  color: #ffffff;
+  padding-top: 395px;
+  text-align: center;
+  margin-bottom: 60px;
+  position: relative;
+
+  @include md {
+    margin-bottom: 103px;
+    text-align: left;
+    padding-top: 104px;
+    padding-bottom: 48px;
+    background-image: url("#{$path}write_to-tablet.png");
+    background-repeat: no-repeat;
+    background-position: 310px 281px;
+  }
+
+  @include smd {
+    background-image: url("#{$path}write_to-smd.png");
+    padding-top: 136px;
+    background-position: 423px 357px;
+    margin-bottom: 87px;
+  }
+
+  @include lg {
+    padding-top: 203px;
+    padding-bottom: 104px;
+    margin-bottom: 143px;
+    background-image: url("#{$path}write_to-desktop.png");
+    background-position: 607px 516px;
+  }
+}
+
+.books__wrapper {
+  @include md {
+    width: 330px;
+    margin: 0 0 0 auto;
+  }
+
+  @include smd {
+    width: 455px;
+  }
+
+  @include lg {
+    width: 648px;
+  }
+}
+
+.books__title {
+  font-weight: 500;
+  line-height: 1.05;
+  font-size: 8.55vw;
+  margin-bottom: 14px;
+  position: relative;
+
+  @include md {
+    font-size: 30px;
+    margin-bottom: 11px;
+  }
+
+  @include smd {
+    font-size: 42px;
+    line-height: 44px;
+    margin-bottom: 17px;
+  }
+
+  @include lg {
+    font-size: 64px;
+    line-height: 67px;
+    margin-bottom: 34px;
+  }
+}
+
+.books__description {
+  line-height: 5.7vw;
+  margin-bottom: 5vw;
+  font-size: 3.7vw;
+
+  @include md {
+    font-size: 14px;
+    line-height: 21px;
+    margin-bottom: 73px;
+  }
+
+  &_desktop {
+    display: none;
+
+    @include smd {
+      display: block;
+      line-height: 23px;
+      font-size: 16px;
+      padding-right: 20px;
+      margin-bottom: 80px;
+    }
+
+    @include lg {
+      font-size: 20px;
+      line-height: 29px;
+      margin-bottom: 101px;
+      padding-right: 110px;
+      letter-spacing: -0.1px;
+    }
+  }
+
+  &_mobile {
+    @include smd {
+      display: none;
+    }
+  }
+}
+
+.books__bold {
+  font-weight: bold;
+}
+
+.books__messengers {
+  @include md {
+    margin-left: 1px;
+  }
+
+  @include lg {
+    margin-left: 0;
+  }
+}

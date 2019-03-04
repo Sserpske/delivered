@@ -1,0 +1,39 @@
+//Large Desktop
+$screen-lg-min: 1450px;
+//Small desktop
+$screen-smd-min: 1100px;
+//Tablets
+$screen-md-min: 678px;
+//XS
+$screen-xs-max: 374px;
+
+// Large devices
+@mixin lg {
+  @media (min-width: #{$screen-lg-min}) {
+    @content;
+  }
+}
+
+@mixin md {
+  @media (min-width: #{$screen-md-min}) {
+    @content;
+  }
+}
+
+@mixin xs {
+  @media (max-width: #{$screen-xs-max}) {
+    @content;
+  }
+}
+
+@mixin smd {
+  @media (min-width: #{$screen-smd-min}) {
+    @content;
+  }
+}
+
+@mixin list-none {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}

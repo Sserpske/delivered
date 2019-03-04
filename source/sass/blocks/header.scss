@@ -1,0 +1,147 @@
+.header {
+  position: absolute;
+  background-color: #3E95F3;
+  width: 100%;
+  z-index: 100;
+}
+
+.header__wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-top: 19px;
+  padding-bottom: 19px;
+
+  @include md {
+    padding-top: 22px;
+    padding-bottom: 22px;
+  }
+
+  @include smd {
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
+
+  @include lg {
+    padding-top: 34px;
+    padding-bottom: 34px;
+  }
+}
+
+.header__nav-link {
+  font-weight: 500;
+  font-size: 12px;
+  color: #ffffff;
+  text-transform: uppercase;
+  border-radius: 4px;
+  padding: 6px 7px 5px 7px;
+
+  @include md {
+    padding: 11px 19px 11px 11px;
+    margin-top: 5px;
+  }
+
+  @include smd {
+    font-size: 14px;
+    padding-right: 0;
+  }
+
+  @include lg {
+    font-size: 18px;
+    margin-right: -2px;
+  }
+
+  &_active {
+    border: 1px solid #FFFFFF;
+
+    @include md {
+      padding: 11px 24px 11px 23px;
+    }
+
+    @include smd {
+      padding: 9px 24px 10px 22px;
+      margin-right: 12px;
+    }
+
+    @include lg {
+      padding: 11px 24px 11px 20px;
+      margin-right: 7px;
+    }
+  }
+  &_tablet {
+    display: none;
+
+    @include md {
+      display: inline;
+    }
+  }
+}
+
+.header__nav {
+  @include md {
+    padding-top: 3px;
+  }
+
+  @include lg {
+    margin-left: auto;
+    margin-right: 2px;
+    padding-top: 6px;
+  }
+}
+
+.header__social {
+  display: none;
+
+  @include lg {
+    display: flex;
+    flex-direction: row;
+    width: 185px;
+    justify-content: space-between;
+  }
+}
+
+.header__social-link {
+  width: 29px;
+  height: 29px;
+  background-repeat: no-repeat;
+
+  &_tw {
+    background-image: url("#{$path}logo-tw-header.svg");
+  }
+
+  &_fb {
+    background-image: url("#{$path}logo-fb-header.svg");
+  }
+
+  &_ig {
+    background-image: url("#{$path}logo-ig-header.svg");
+  }
+
+  &_yt {
+    background-image: url("#{$path}logo-yt-header.svg");
+  }
+}
+
+.header__link {
+  width: 89px;
+  height: 16px;
+  background-image: url("#{$path}logo-amo-mobile.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+
+  @include md {
+    width: 100px;
+    height: 19px;
+  }
+
+  @include smd {
+    width: 124px;
+    height: 23px;
+    margin-left: -1px;
+  }
+
+  @include lg {
+    width: 178px;
+    height: 32px;
+  }
+}

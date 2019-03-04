@@ -1,0 +1,142 @@
+.order {
+  background-color: #ffffff;
+  text-align: center;
+  position: relative;
+
+  @include md {
+    text-align: left;
+  }
+}
+
+.order__outer-wrapper {
+  background-image: url("#{$path}bg-apple.png");
+  background-repeat: no-repeat;
+  background-position: 23px 49px;
+  padding-bottom: 45px;
+  background-size: 358px auto;
+
+  @include md {
+    background-position: -18px 43px;
+    background-size: 388px auto;
+    padding-bottom: 100px;
+  }
+
+  @include smd {
+    background-position: -20px 67px;
+    background-size: 498px auto;
+    padding-bottom: 126px;
+  }
+
+  @include lg {
+    background-position: -31px 69px, 645px 340px;
+    background-size: 744px auto, 625px auto;
+    padding-bottom: 200px;
+  }
+}
+
+.order__call {
+  font-size: 28px;
+  font-weight: 900;
+  margin-bottom: 8px;
+
+  @include md {
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 13px;
+  }
+
+  @include smd {
+    font-size: 42px;
+    margin-bottom: 20px;
+  }
+
+  @include lg {
+    font-size: 64px;
+    margin-bottom: 45px;
+  }
+}
+
+.order__text {
+  font-size: 16px;
+  padding: 0 50px;
+  margin-bottom: 20px;
+
+  @include md {
+    font-size: 14px;
+    padding: 0;
+    letter-spacing: -0.1px;
+    margin-bottom: 18px;
+  }
+
+  @include smd {
+    margin-bottom: 31px;
+  }
+
+  @include lg {
+    font-size: 20px;
+    margin-bottom: 37px;
+  }
+}
+
+.order__text-dot {
+  @media (min-width: 678px) and (max-width: 1327px) {
+    display: none;
+  }
+}
+
+
+.order__wrapper {
+  padding-top: 353px;
+
+  @include md {
+    width: 329px;
+    padding-top: 108px;
+    margin-left: auto;
+  }
+
+  @include smd {
+    width: 455px;
+    padding-top: 164px;
+  }
+
+  @include lg {
+    width: 648px;
+    padding-top: 188px;
+  }
+}
+
+.order__text-link {
+  text-decoration: underline;
+}
+
+.order__amazon {
+  @include md {
+    margin-top: 74px;
+  }
+
+  @include smd {
+    margin-top: 104px;
+  }
+
+  @include lg {
+    margin-top: 146px;
+    font-size: 20px;
+  }
+}
+
+.order__amazon-link {
+  text-decoration: underline;
+}
+
+.order__button {
+  margin-bottom: 22px;
+}
+
+.order__messengers {
+  margin-bottom: 13px;
+
+  @include lg {
+    margin-left: 2px;
+    margin-bottom: 34px;
+  }
+}

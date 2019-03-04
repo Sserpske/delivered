@@ -1,0 +1,150 @@
+.feedback {
+  width: 375px;
+  margin: 0 auto 10px;
+  overflow: hidden;
+  height: 272px;
+
+  @media (max-width: 374px) {
+    width: 350px;
+  }
+
+  @media (max-width: 349px) {
+    width: 315px;
+  }
+
+  @include md {
+    width: 678px;
+    margin-bottom: 44px;
+    overflow: visible;
+    height: auto;
+  }
+
+  @include smd {
+    margin-bottom: 70px;
+  }
+
+  @include lg {
+    margin-bottom: 110px;
+  }
+}
+
+.feedback__title {
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 500;
+  text-align: center;
+  margin-bottom: 22px;
+
+  @include md {
+    margin-bottom: 20px;
+  }
+
+  @include smd {
+    font-size: 24px;
+    margin-bottom: 26px;
+  }
+
+  @include lg {
+    font-size: 36px;
+    margin-bottom: 46px;
+  }
+}
+
+.feedback__item {
+  width: 100%;
+  height: 200px;
+  background-color: #FFFFFF;
+  border-radius: 12px;
+  padding: 20px 19px 0;
+  text-align: left;
+  line-height: 21px;
+
+  @include md {
+    border-radius: 20px;
+    padding: 39px 37px 0;
+  }
+
+  @include smd {
+    padding: 35px 60px 0;
+  }
+
+  @include lg {
+    padding: 64px 73px 0;
+    letter-spacing: -0.1px;
+  }
+}
+
+.feedback__title-tablet {
+  display: none;
+
+  @include md {
+    display: inline;
+  }
+}
+
+.feedback__text {
+  margin-bottom: 10px;
+
+  @include smd {
+    margin-bottom: 10px;
+  }
+
+  @include lg {
+    margin-bottom: 16px;
+  }
+}
+
+.feedback__author {
+  padding-left: 40px;
+  display: flex;
+  flex-direction: column;
+  background-repeat: no-repeat;
+  background-position: 2px 0;
+  background-size: 30px 30px;
+
+  &_1 {
+    background-image: url("#{$path}avatar-1.png");
+  }
+
+  &_2 {
+    background-image: url("#{$path}avatar-2.png");
+  }
+
+  &_3 {
+    background-image: url("#{$path}avatar-2.png");
+  }
+
+  @include md {
+    padding-left: 47px;
+    padding-bottom: 12px;
+    background-position: 1px 2px;
+    background-size: 36px 36px;
+  }
+
+  @include smd {
+    padding-left: 56px;
+    padding-bottom: 12px;
+    background-size: 40px 40px;
+    padding-top: 5px;
+  }
+
+  @include lg {
+    padding-left: 78px;
+    background-position: 2px 0px;
+    background-size: 60px 60px;
+    padding-top: 0;
+  }
+}
+
+.feedback__company {
+  color: #A6A7B2;
+  letter-spacing: -0.1px;
+}
+
+.feedback__name {
+  margin-bottom: -6px;
+
+  @include lg {
+    margin-bottom: -1px;
+  }
+}

@@ -1,0 +1,161 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", "Helvetica", sans-serif;
+  font-weight: 400;
+  color: #000000;
+  position: relative;
+  font-size: 14px;
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  text-decoration: none;
+  color: #000000;
+}
+
+.btn {
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+  padding: 0;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+a, abbr, acronym, address, applet, article, aside, audio, b, big, blockquote, body, canvas, caption, center, cite, code, dd, del, details, dfn, div, dl, dt, em, embed, fieldset, figcaption, figure, footer, form, h1, h2, h3, h4, h5, h6, header, hgroup, html, i, iframe, img, ins, kbd, label, legend, li, mark, menu, nav, object, ol, output, p, pre, q, ruby, s, samp, section, small, span, strike, strong, sub, summary, sup, table, tbody, td, tfoot, th, thead, time, tr, tt, u, ul, var, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline;
+}
+
+.yellow-button {
+  font-size: 4vw;
+  font-weight: 900;
+  text-transform: uppercase;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+  background: #FDD746;
+  border-radius: 4px;
+  padding: 4.6vw 0 4.2vw;
+  width: 87%;
+  display: block;
+  margin: 0 auto;
+
+  @include md {
+    display: none;
+  }
+}
+
+.messengers {
+  display: none;
+
+  @include md {
+    width: 298px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: absolute;
+  }
+
+  @include smd {
+    width: 400px;
+  }
+
+  @include lg {
+    width: 551px;
+  }
+}
+
+.messengers__link {
+  z-index: 10;
+  position: relative;
+  transition: all ease 0.3s;
+
+  &::before {
+    content: '';
+    position: absolute;
+    width: 38px;
+    height: 38px;
+    border-radius: 40px;
+    box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.25);
+    top: 0;
+    left: 0;
+
+    @include smd {
+      width: 50px;
+      height: 50px;
+    }
+
+    @include lg {
+      width: 70px;
+      height: 70px;
+    }
+  }
+
+  &:hover {
+    transform: scale(1.3);
+    padding-bottom: 20px;
+    z-index: 5;
+  }
+}
+
+.container {
+  width: 315px;
+  margin: 0 auto;
+
+  @include md {
+    width: 678px;
+  }
+
+  @include smd {
+    width: 930px;
+  }
+
+  @include lg {
+    width: 1328px;
+  }
+}
+
+.tablet {
+  display: none;
+
+  @include md {
+    display: inline;
+  }
+}
+
+.desktop {
+  display: none;
+
+  @include lg {
+    display: inline;
+  }
+}
+
+.mobile {
+  display: inline;
+
+  @include smd {
+    display: none;
+  }
+}
