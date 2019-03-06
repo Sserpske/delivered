@@ -1,26 +1,108 @@
 .modal-main {
   display: none;
+  padding: 11vh 27px 40px;
+  text-align: center;
+
+  @media (max-width: 370px) {
+    padding: 6vh 27px 40px;
+  }
+
+  @include md {
+    position: absolute;
+    width: 728px;
+    left: calc(50% - 291px);
+    top: 24.5%;
+    padding: 0;
+    text-align: left;
+
+    &::before {
+      content: '';
+      position: absolute;
+      width: 606px;
+      height: 200px;
+      background-image: url("#{$path}write-to-desktop.png");
+      background-size: 605px;
+      background-repeat: no-repeat;
+      top: 399px;
+      left: -73px;
+    }
+  }
 }
 
 .modal-main__title {
   text-transform: capitalize;
   line-height: 34px;
-  font-size: 32px;
+  font-size: 8.55vw;
   font-weight: 500;
-  margin-bottom: 20px;
+  margin-bottom: 9px;
+
+  @include md {
+    line-height: 67px;
+    font-size: 64px;
+    margin-bottom: 26px;
+  }
 }
 
 .modal-main__description {
   line-height: 26px;
-  font-size: 18px;
-  margin-bottom: 80px;
+  font-size: 4.8vw;
+  margin-bottom: 4vh;
+
+  &_mobile {
+    @include md {
+      display: none;
+    }
+  }
+
+  &_mobile:nth-of-type(2) {
+    padding: 0 19vw;
+    margin-bottom: 3px;
+  }
+
   &_desktop {
     display: none;
+
+    @include md {
+      display: block;
+      line-height: 29px;
+      font-size: 20px;
+      padding-left: 7px;
+      padding-right: 130px;
+      letter-spacing: -0.1px;
+      margin-bottom: 5px;
+    }
   }
 }
 
 .modal-main__list {
   display: none;
+
+  @include list-none;
+
+  @include md {
+    display: block;
+    line-height: 35px;
+    font-size: 20px;
+    margin-bottom: 84px;
+  }
+}
+
+.modal-main__list-item {
+  padding-left: 35px;
+  letter-spacing: -0.1px;
+  position: relative;
+
+  &::before {
+    content: '';
+    position: absolute;
+    width: 15px;
+    height: 13px;
+    background-image: url("#{$path}check-modal.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    top: 12px;
+    left: 8px;
+  }
 }
 
 .modal-main__buttons-area {
@@ -29,7 +111,7 @@
   flex-direction: column;
   align-items: center;
 
-  @include smd {
+  @include md {
     display: none;
   }
 }
@@ -38,50 +120,67 @@
   width: 197px;
   height: 50px;
   background-color: #ffffff;
-  margin-bottom: 5px;
+  margin-bottom: 4px;
   box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.1);
   border-radius: 4px;
   font-size: 15px;
   text-align: left;
-  padding: 15px 20px 10px 40px;
+  padding: 17px 20px 10px 53px;
   background-repeat: no-repeat;
-  background-position: 3px 5px;
+  background-position: 11px 7px;
+  background-size: 39px auto;
 
   &_fm {
-    background-image: url("#{$path}fbmessenger-modal.svg");
+    background-image: url("#{$path}fbmessenger-modal.png");
   }
 
   &_sk {
-    background-image: url("#{$path}skype-modal.svg");
+    background-image: url("#{$path}skype-modal.png");
   }
 
   &_tg {
-    background-image: url("#{$path}telegram-modal.svg");
+    background-image: url("#{$path}telegram-modal.png");
   }
 
   &_vb {
-    background-image: url("#{$path}viber-modal.svg");
+    background-image: url("#{$path}viber-modal.png");
   }
 
   &_wc {
-    background-image: url("#{$path}wechat-modal.svg");
+    background-image: url("#{$path}wechat-modal.png");
   }
 
   &_em {
-    background-image: url("#{$path}email-modal.svg");
+    background-image: url("#{$path}email-modal.png");
   }
 }
 
 .modal-main__title-desktop {
   display: none;
+
+  @include md {
+    display: inline;
+  }
+}
+
+.modal-main__title-mobile {
+  @include md {
+    display: none;
+  }
 }
 
 .modal-main__messengers {
   display: none;
 
-  @include smd {
+  @include md {
     display: flex;
+    width: 551px;
   }
+}
+
+.modal-main__messengers-link::before {
+  width: 70px;
+  height: 70px;
 }
 
 .modal__close {
@@ -90,10 +189,137 @@
   height: 20px;
   background-image: url("#{$path}close-button.svg");
   background-repeat: no-repeat;
-  top: 0;
-  right: 0;
+  top: 17px;
+  right: 17px;
+  z-index: 10;
+
+  @include md {
+    background-image: url("#{$path}close-button-desktop.svg");
+    width: 52px;
+    height: 52px;
+  }
 }
 
 .modal-registration {
+  background-color: #ffffff;
+  height: 100%;
   display: none;
+  text-align: center;
+  position: relative;
+
+  @include md {
+    width: 600px;
+    height: 584px;
+    position: absolute;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+    top: 22%;
+    left: calc(50% - 300px);
+    border-radius: 5px;
+  }
+  
+  &::before {
+    content: '';
+    width: 106px;
+    height: 106px;
+    position: absolute;
+    background-repeat: no-repeat;
+    background-size: cover;
+    top: 28.6vh;
+    left: calc(50% - 56px);
+
+    @include md {
+      top: 81px;
+      left: calc(50% - 54px);
+    }
+  }
+
+  &_fbmessenger {
+    &::before {
+      background-image: url("#{$path}fbmessenger-modal.png");
+    }
+  }
+
+  &_viber {
+    &::before {
+      background-image: url("#{$path}viber-modal.png");
+    }
+  }
+  
+  &_telegram {
+    &::before {
+      background-image: url("#{$path}telegram-modal.png");
+    }
+  }
+
+  &_skype {
+    &::before {
+      background-image: url("#{$path}skype-modal.png");
+    }
+  }
+}
+
+.modal-registration__background {
+  width: 100%;
+  height: 35.1vh;
+  background-image: url("#{$path}bg-modal-mobile.svg");
+  background-size: cover;
+  margin-bottom: 8.5vh;
+
+  @include md {
+    height: 130px;
+    background-image: url("#{$path}bg-modal-desktop.svg");
+    margin-bottom: 60px;
+  }
+}
+
+.modal-registration__title {
+  color: #000000;
+  font-weight: 500;
+  font-size: 32px;
+  padding: 0 10px;
+  margin-bottom: 10px;
+
+  @include md {
+    margin-bottom: 14px;
+  }
+}
+
+.modal-registration__countdown {
+  display: block;
+  font-weight: 500;
+  font-size: 24px;
+  color: #3E95F3;
+  margin-bottom: 1px;
+
+  @include md {
+    margin-bottom: 12px;
+  }
+}
+
+.modal-registration__redirect {
+  font-weight: 300;
+  line-height: normal;
+  font-size: 14px;
+  color: #A6A7B2;
+  padding: 0 70px;
+
+  @include md {
+    padding: 0 180px;
+  }
+}
+
+.modal-registration__demo {
+  width: auto;
+  height: 27.3vh;
+  margin: 0 auto 16px;
+
+  @include md {
+    height: 236px;
+    margin: 0 auto 10px;
+  }
+}
+
+.modal-registration__redirect-link {
+  text-decoration: underline;
+  color: #3E95F3;
 }

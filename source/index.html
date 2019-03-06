@@ -30,16 +30,16 @@
                         <h2 class="books__title">The Messaging Revolution is Here.</h2>
                         <p class="books__description books__description_mobile">Find out how <span class="books__bold">Messenger-Based Sales</span> is overturning conventional sales advice and threatening the reign of phone and email.</p>
                         <p class="books__description books__description_desktop">All over the world, forward-thinking sales teams are heralding the new era of <span class="books__bold">Messenger-Based Sales.</span> Find out how the humble messaging app is overturning conventional sales advice and threatening the reign of phone and email.</p>
-                        <a href="#" class="books__button yellow-button">Download the book</a>
+                        <a href="#js-modal-main" class="books__button yellow-button">Download the book</a>
                         <div class="books__messengers messengers">
-                            <a href="#" class="books__messengers-link messengers__link">
+                            <a href="#js-modal-fbmessenger" class="books__messengers-link messengers__link">
                                 <picture>
                                     <source media="(min-width: 1450px)" srcset="img/fbmessenger-desktop.svg">
                                     <source media="(min-width: 1100px)" srcset="img/fbmessenger-smd.svg">
                                     <img src="img/fbmessenger.svg" alt="Facebook Messenger">
                                 </picture>
                             </a>
-                            <a href="#" class="books__messengers-link messengers__link">
+                            <a href="#js-modal-skype" class="books__messengers-link messengers__link">
                                 <picture>
                                     <source media="(min-width: 1450px)" srcset="img/skype-desktop.svg">
                                     <source media="(min-width: 1100px)" srcset="img/skype-smd.svg">
@@ -53,7 +53,7 @@
                                     <img src="img/telegram.svg" alt="Telegram">
                                 </picture>
                             </a>
-                            <a href="#" class="books__messengers-link messengers__link">
+                            <a href="#js-modal-viber" class="books__messengers-link messengers__link">
                                 <picture>
                                     <source media="(min-width: 1450px)" srcset="img/viber-desktop.svg">
                                     <source media="(min-width: 1100px)" srcset="img/viber-smd.svg">
@@ -169,18 +169,18 @@
                     <div class="order__outer-wrapper container">
                         <div class="order__wrapper">
                             <p class="order__call">Get it Now</p>
-                            <p class="order__text"><a href="#" class="order__text-link">Download it</a> via your favorite
+                            <p class="order__text"><a href="#js-modal-main" class="order__text-link">Download it</a> via your favorite
                                 messaging app or email<span class="order__text-dot">.</span></p>
-                            <a href="#" class="order__button yellow-button">Download the book</a>
+                            <a href="#js-modal-main" class="order__button yellow-button">Download the book</a>
                             <div class="order__messengers messengers">
-                                <a href="#" class="order__messengers-link messengers__link">
+                                <a href="#js-modal-fbmessenger" class="order__messengers-link messengers__link">
                                     <picture>
                                         <source media="(min-width: 1450px)" srcset="img/fbmessenger-desktop.svg">
                                         <source media="(min-width: 1100px)" srcset="img/fbmessenger-smd.svg">
                                         <img src="img/fbmessenger.svg" alt="Facebook Messenger">
                                     </picture>
                                 </a>
-                                <a href="#" class="order__messengers-link-link messengers__link">
+                                <a href="#js-modal-skype" class="order__messengers-link-link messengers__link">
                                     <picture>
                                         <source media="(min-width: 1450px)" srcset="img/skype-desktop.svg">
                                         <source media="(min-width: 1100px)" srcset="img/skype-smd.svg">
@@ -194,7 +194,7 @@
                                         <img src="img/telegram.svg" alt="Telegram">
                                     </picture>
                                 </a>
-                                <a href="#" class="order__messengers-link messengers__link">
+                                <a href="#js-modal-viber" class="order__messengers-link messengers__link">
                                     <picture>
                                         <source media="(min-width: 1450px)" srcset="img/viber-desktop.svg">
                                         <source media="(min-width: 1100px)" srcset="img/viber-smd.svg">
@@ -246,75 +246,73 @@
         </div>
     </div>
     <div class="page__modal">
+        <button class="modal__close btn"></button>
         <div class="modal modal-main" id="js-modal-main">
-            <h2 class="modal-main__title">get <span class="modal-main__title-mobile">it</span><span class="modal-main__title-desktop">the book</span> on your favorite messenger</h2>
-            <button class="modal__close btn"></button>
+            <h2 class="modal-main__title">get <span class="modal-main__title-mobile">it </span><span class="modal-main__title-desktop">the book </span>on your favorite messenger</h2>
             <p class="modal-main__description modal-main__description_mobile">The world's moving toward messaging. Experience it for yourself.</p>
-            <p class="modal-main__description modal-main__description_desktop">The world is moving toward messaging. Experience it for yourself by getting the book from our chatbot. You can communicate with us in real-time plus get access to exclusive bonus materials.<br> You can also:</p>
+            <p class="modal-main__description modal-main__description_mobile">Write to our chatbot to get the book now</p>
+            <p class="modal-main__description modal-main__description_desktop">The world is moving toward messaging. Experience it for yourself by getting the book from our chatbot. You can communicate with us in real-time plus get access to exclusive bonus materials. <br>You can also:</p>
             <ul class="modal-main__list">
                 <li class="modal-main__list-item">Submit questions to the authors</li>
                 <li class="modal-main__list-item">Reserve your seat at our live Book Talk webinar</li>
                 <li class="modal-main__list-item">Vote on topics you'd like us to address at the webinar</li>
             </ul>
             <div class="modal-main__buttons-area">
-                <a href="#" class="modal-main__button modal-main__button_fm">Messenger</a>
-                <a href="#" class="modal-main__button modal-main__button_sk">Skype</a>
+                <a href="#js-modal-fbmessenger" class="modal-main__button modal-main__button_fm">Messenger</a>
+                <a href="#js-modal-skype" class="modal-main__button modal-main__button_sk">Skype</a>
                 <a href="#js-modal-telegram" class="modal-main__button modal-main__button_tg">Telegram</a>
-                <a href="#" class="modal-main__button modal-main__button_vb">Viber</a>
+                <a href="#js-modal-viber" class="modal-main__button modal-main__button_vb">Viber</a>
                 <a href="#" class="modal-main__button modal-main__button_wc">WeChat</a>
                 <a href="#" class="modal-main__button modal-main__button_em">Email</a>
             </div>
             <div class="modal-main__messengers messengers">
-                <a href="#" class="modal-main__messengers-link messengers__link">
-                    <picture>
-                        <source media="(min-width: 1450px)" srcset="img/fbmessenger-desktop.svg">
-                        <source media="(min-width: 1100px)" srcset="img/fbmessenger-smd.svg">
-                        <img src="img/fbmessenger.svg" alt="Facebook Messenger">
-                    </picture>
+                <a href="#js-modal-fbmessenger" class="modal-main__messengers-link messengers__link">
+                    <img src="img/fbmessenger-desktop.svg" alt="Facebook Messenger">
                 </a>
-                <a href="#" class="modal-main__messengers-link messengers__link">
-                    <picture>
-                        <source media="(min-width: 1450px)" srcset="img/skype-desktop.svg">
-                        <source media="(min-width: 1100px)" srcset="img/skype-smd.svg">
-                        <img src="img/skype.svg" alt="Skype">
-                    </picture>
+                <a href="#js-modal-skype" class="modal-main__messengers-link messengers__link">
+                    <img src="img/skype-desktop.svg" alt="Skype">
                 </a>
                 <a href="#js-modal-telegram" class="modal-main__messengers-link messengers__link">
-                    <picture>
-                        <source media="(min-width: 1450px)" srcset="img/telegram-desktop.svg">
-                        <source media="(min-width: 1100px)" srcset="img/telegram-smd.svg">
-                        <img src="img/telegram.svg" alt="Telegram">
-                    </picture>
+                    <img src="img/telegram-desktop.svg" alt="Telegram">
+                </a>
+                <a href="#js-modal-viber" class="modal-main__messengers-link messengers__link">
+                    <img src="img/viber-desktop.svg" alt="Viber">
                 </a>
                 <a href="#" class="modal-main__messengers-link messengers__link">
-                    <picture>
-                        <source media="(min-width: 1450px)" srcset="img/viber-desktop.svg">
-                        <source media="(min-width: 1100px)" srcset="img/viber-smd.svg">
-                        <img src="img/viber.svg" alt="Viber">
-                    </picture>
+                    <img src="img/wechat-desktop.svg" alt="Wechat">
                 </a>
                 <a href="#" class="modal-main__messengers-link messengers__link">
-                    <picture>
-                        <source media="(min-width: 1450px)" srcset="img/wechat-desktop.svg">
-                        <source media="(min-width: 1100px)" srcset="img/wechat-smd.svg">
-                        <img src="img/wechat.svg" alt="Wechat">
-                    </picture>
-                </a>
-                <a href="#" class="modal-main__messengers-link messengers__link">
-                    <picture>
-                        <source media="(min-width: 1450px)" srcset="img/email-desktop.svg">
-                        <source media="(min-width: 1100px)" srcset="img/email-smd.svg">
-                        <img src="img/email.svg" alt="E-Mail">
-                    </picture>
+                    <img src="img/email-desktop.svg" alt="E-Mail">
                 </a>
             </div>
         </div>
+        <div class="modal modal-registration modal-registration_fbmessenger" id="js-modal-fbmessenger">
+            <div class="modal-registration__background"></div>
+            <h2 class="modal-registration__title">Don’t Forget to Click “Get Started”</h2>
+            <img class="modal-registration__demo" src="img/animation-fbmessenger.gif" alt="demo">
+            <span class="modal-registration__countdown"></span>
+            <p class="modal-registration__redirect">If the page does not redirect automatically, please <a href="#" class="modal-registration__redirect-link">click here.</a></p>
+        </div>
+        <div class="modal modal-registration modal-registration_skype" id="js-modal-skype">
+            <div class="modal-registration__background"></div>
+            <h2 class="modal-registration__title">Don’t Forget to Click “Get Started”</h2>
+            <img class="modal-registration__demo" src="img/animation-skype.gif" alt="demo">
+            <span class="modal-registration__countdown"></span>
+            <p class="modal-registration__redirect">If the page does not redirect automatically, please <a href="#" class="modal-registration__redirect-link">click here.</a></p>
+        </div>
         <div class="modal modal-registration modal-registration_telegram" id="js-modal-telegram">
-            <h2 class="modal__title">Don’t Forget to Click “Get Started”</h2>
-            <button class="modal__close btn"></button>
-            <img class="modal__demo" src="img/demo-telegram.png" alt="demo">
-            <span class="modal__countdown" id="countdown"></span>
-            <p class="modal__redirect">If the page does not redirect automatically, please <a href="#">click here.</a></p>
+            <div class="modal-registration__background"></div>
+            <h2 class="modal-registration__title">Don’t Forget to Click “Get Started”</h2>
+            <img class="modal-registration__demo" src="img/animation-telegram.gif" alt="demo">
+            <span class="modal-registration__countdown"></span>
+            <p class="modal-registration__redirect">If the page does not redirect automatically, please <a href="#" class="modal-registration__redirect-link">click here.</a></p>
+        </div>
+        <div class="modal modal-registration modal-registration_viber" id="js-modal-viber">
+            <div class="modal-registration__background"></div>
+            <h2 class="modal-registration__title">Don’t Forget to Click “Get Started”</h2>
+            <img class="modal-registration__demo" src="img/animation-viber.gif" alt="demo">
+            <span class="modal-registration__countdown"></span>
+            <p class="modal-registration__redirect">If the page does not redirect automatically, please <a href="#" class="modal-registration__redirect-link">click here.</a></p>
         </div>
     </div>
 	<script>
@@ -354,36 +352,19 @@
         scrollToPos('#inside');
       });
 
-      // $(function(){
-      //   // Кнопки share
-      //   $('.modal__share').on ('click',
-      //     '#js-share-button--facebook, ' +
-      //     '#js-share-button--linkedin, ' +
-      //     '#js-share-button--twitter', function () {
-      //       $(".modal__share-container_share").hide();
-      //       $(".modal__share-container_thanks").show();
-      //     });
-      //
-      //   $('.header__nav-link').click(function(e){
-      //     $("#all-messengers").show();
-      //     $("body").css("overflow","hidden");
-      //     $(".page__outer").addClass('active-modal');
-      //   });
-      // });
-
       //отсчёт
 
       var isClose = false;
       var seconds = 5;
-      function time(){
-        var timeName = ' seconds';
+      function time(id, link){
+        var timeName = ' seconds...';
         if (seconds <= 1) {
-          timeName = ' second '
+          timeName = ' second...'
         }
-        document.getElementById("countdown").innerHTML = seconds + timeName;
+        document.querySelectorAll(".modal-registration__countdown")[id].innerHTML = seconds + timeName;
         seconds--;
         if (seconds < 0 && !isClose) {
-          // location.href = "https://amocrm.com";
+          location.href = link;
           seconds = 5;
           return false;
         } else if (isClose) {
@@ -391,7 +372,7 @@
           isClose = false;
           return false;
         }
-        setTimeout("time()", 1000);
+        setTimeout(time, 1000, id, link);
       }
 
       $(document).ready(function() {
@@ -403,6 +384,7 @@
           }
           $(this).scrollTop(position);
         };
+
         $('a[href^="#js-modal-main"]').click(function(e){
           e.preventDefault();
           $(".page__modal").show();
@@ -418,7 +400,40 @@
           $("#js-modal-telegram").show();
           $("#js-modal-main").hide();
           $(".page__outer").addClass('active-modal');
-          time();
+          time(2, "https://www.amocrm.com/telegram");
+          position = doc.scrollTop();
+          doc.on('scroll keydown mousewheel', scrollFix);
+        });
+
+        $('a[href^="#js-modal-fbmessenger"]').click(function(e){
+          e.preventDefault();
+          $(".page__modal").show();
+          $("#js-modal-fbmessenger").show();
+          $("#js-modal-main").hide();
+          $(".page__outer").addClass('active-modal');
+          time(0);
+          position = doc.scrollTop();
+          doc.on('scroll keydown mousewheel', scrollFix);
+        });
+
+        $('a[href^="#js-modal-skype"]').click(function(e){
+          e.preventDefault();
+          $(".page__modal").show();
+          $("#js-modal-skype").show();
+          $("#js-modal-main").hide();
+          $(".page__outer").addClass('active-modal');
+          time(1);
+          position = doc.scrollTop();
+          doc.on('scroll keydown mousewheel', scrollFix);
+        });
+
+        $('a[href^="#js-modal-viber"]').click(function(e){
+          e.preventDefault();
+          $(".page__modal").show();
+          $("#js-modal-viber").show();
+          $("#js-modal-main").hide();
+          $(".page__outer").addClass('active-modal');
+          time(3);
           position = doc.scrollTop();
           doc.on('scroll keydown mousewheel', scrollFix);
         });
@@ -427,26 +442,15 @@
 
         $('.modal__close').click(function(){
           $("#js-modal-main").hide();
-          $("#js-modal-telegram").hide();
+          $(".modal-registration").hide();
           $(".page__modal").hide();
           $(".page__outer").removeClass('active-modal');
           isClose = true;
+          seconds = 5;
           doc.unbind('scroll keydown mousewheel', scrollFix);
           return false;
         });
       });
-
-      // ----------------!!!!!!!!!!!!!!!!!!!!!!!!!!!!--------------------------------- надо разобраться с перебором
-      //
-      // var element = document.querySelectorAll('#button');
-      // element.forEach(item => {
-      //   item.onclick = () => {
-      //     var id = item.getAttribute('data-id');
-      //     var modal = document.querySelector('#' + id);
-      //
-      //     modal.css('display', 'block');
-      //   }
-      // });
 	</script>
 </body>
 </html>
