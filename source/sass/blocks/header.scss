@@ -18,8 +18,8 @@
   }
 
   @include smd {
-    padding-top: 24px;
-    padding-bottom: 24px;
+    padding-top: 20px;
+    padding-bottom: 18px;
   }
 
   @include lg {
@@ -41,7 +41,7 @@
   }
 
   @include smd {
-    font-size: 14px;
+    font-size: 18px;
     padding-right: 0;
   }
 
@@ -58,8 +58,8 @@
     }
 
     @include smd {
-      padding: 9px 24px 10px 22px;
-      margin-right: 12px;
+      padding: 12px 22px 10px 20px;
+      margin-right: 10px;
     }
 
     @include lg {
@@ -82,7 +82,7 @@
   }
 
   @include smd {
-    margin-top: -8px;
+    margin-top: -6px;
   }
 
   @include lg {
@@ -138,9 +138,9 @@
   }
 
   @include smd {
-    width: 124px;
-    height: 23px;
-    margin-left: -1px;
+    width: 158px;
+    height: 29px;
+    margin-top: 1px;
   }
 
   @include lg {

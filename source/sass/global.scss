@@ -16,6 +16,7 @@ body {
   color: #000000;
   position: relative;
   font-size: 14px;
+  background-color: #3E95F3;
   -webkit-font-smoothing: antialiased;
 }
 
@@ -78,7 +79,7 @@ a, abbr, acronym, address, applet, article, aside, audio, b, big, blockquote, bo
   }
 
   @include smd {
-    width: 400px;
+    width: 459px;
   }
 
   @include lg {
@@ -104,8 +105,8 @@ a, abbr, acronym, address, applet, article, aside, audio, b, big, blockquote, bo
     }
 
     @include smd {
-      width: 50px;
-      height: 50px;
+      width: 58px;
+      height: 58px;
     }
 
     @include lg {
@@ -130,7 +131,7 @@ a, abbr, acronym, address, applet, article, aside, audio, b, big, blockquote, bo
   }
 
   @include smd {
-    width: 930px;
+    width: 1070px;
   }
 
   @include lg {

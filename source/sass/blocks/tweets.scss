@@ -26,7 +26,7 @@
   margin-bottom: 13px!important;
 
   @include smd {
-    width: 297px!important;
+    width: 520px!important;
   }
 
   @include lg {
@@ -46,7 +46,7 @@
   }
 
   @include smd {
-    height: 1007px;
+    height: 1220px;
   }
 
   @include lg {
@@ -67,7 +67,8 @@
   }
 
   @include smd {
-    width: 297px;
+    width: 520px;
+    height: 525px;
   }
 
   @include lg {
@@ -78,7 +79,7 @@
 .tweets__container_desktop {
   display: none;
 
-  @include smd {
+  @include lg {
     display: block;
   }
 }

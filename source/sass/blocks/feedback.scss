@@ -20,7 +20,7 @@
   }
 
   @include smd {
-    margin-bottom: 70px;
+    margin-bottom: 52px;
   }
 
   @include lg {
@@ -40,8 +40,8 @@
   }
 
   @include smd {
-    font-size: 24px;
-    margin-bottom: 26px;
+    font-size: 32px;
+    margin-bottom: 30px;
   }
 
   @include lg {
@@ -65,7 +65,7 @@
   }
 
   @include smd {
-    padding: 35px 60px 0;
+    padding: 42px 52px 0;
   }
 
   @include lg {
@@ -87,6 +87,7 @@
 
   @include smd {
     margin-bottom: 10px;
+    letter-spacing: -0.1px;
   }
 
   @include lg {
@@ -122,10 +123,11 @@
   }
 
   @include smd {
-    padding-left: 56px;
+    padding-left: 62px;
     padding-bottom: 12px;
-    background-size: 40px 40px;
+    background-size: 45px 45px;
     padding-top: 5px;
+    background-position: 1px 9px;
   }
 
   @include lg {
@@ -143,6 +145,10 @@
 
 .feedback__name {
   margin-bottom: -6px;
+
+  @include smd {
+    margin-bottom: 3px;
+  }
 
   @include lg {
     margin-bottom: -1px;

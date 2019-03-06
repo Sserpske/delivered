@@ -10,9 +10,9 @@
   }
 
   @include smd {
-    font-size: 16px;
+    font-size: 18px;
     padding-top: 52px;
-    padding-bottom: 30px;
+    padding-bottom: 48px;
   }
 
   @include lg {
@@ -71,9 +71,8 @@
 
   @include smd {
     margin-bottom: 10px;
-    margin-left: 19px;
-    order: 2;
-    width: 85px;
+    margin-left: 13px;
+    width: 98px;
   }
 
   @include lg {
@@ -92,6 +91,11 @@
     width: 5px;
     height: 13px;
 
+    @include smd {
+      width: 5.5px;
+      height: 14px;
+    }
+
     @include lg {
       width: 6px;
       height: 16px;
@@ -103,9 +107,16 @@
     width: 16px;
     height: 13px;
 
+    @include smd {
+      width: 17px;
+      height: 14px;
+      margin-left: 1px;
+    }
+
     @include lg {
       width: 19px;
       height: 16px;
+      margin-left: 0;
       margin-right: -1px;
     }
   }
@@ -114,6 +125,11 @@
     background-image: url("#{$path}logo-ig.svg");
     width: 13px;
     height: 13px;
+
+    @include smd {
+      width: 14px;
+      height: 14px;
+    }
 
     @include lg {
       width: 16px;
@@ -125,6 +141,11 @@
     background-image: url("#{$path}logo-yt.svg");
     width: 18.65px;
     height: 13px;
+
+    @include smd {
+      width: 20px;
+      height: 14px;
+    }
 
     @include lg {
       width: 22.96px;
@@ -153,7 +174,7 @@
 
   @include smd {
     margin-top: 0;
-    margin-right: 15px;
+    margin-right: 18px;
   }
 
   @include lg {
@@ -186,7 +207,7 @@
 
   @include smd {
     margin-top: -1px;
-    height: 17px;
+    height: 20px;
     margin-right: 11px;
   }
 
@@ -208,7 +229,7 @@
   &_desktop {
     @include smd {
       display: inline-block;
-      margin-left: 14px;
+      margin-left: 18px;
       margin-right: 13px;
     }
 

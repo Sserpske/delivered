@@ -10,24 +10,26 @@
     text-align: left;
     padding-top: 104px;
     padding-bottom: 48px;
-    background-image: url("#{$path}write_to-tablet.png");
+    background-image: url("#{$path}write-to-tablet.png");
     background-repeat: no-repeat;
-    background-position: 310px 281px;
+    background-position: 314px 281px;
+    background-size: 335px;
   }
 
   @include smd {
-    background-image: url("#{$path}write_to-smd.png");
-    padding-top: 136px;
-    background-position: 423px 357px;
-    margin-bottom: 87px;
+    background-image: url("#{$path}write-to-desktop.png");
+    padding-top: 149px;
+    background-position: 490px 410px;
+    background-size: 454px;
+    margin-bottom: 108px;
   }
 
   @include lg {
     padding-top: 203px;
     padding-bottom: 104px;
     margin-bottom: 143px;
-    background-image: url("#{$path}write_to-desktop.png");
     background-position: 607px 516px;
+    background-size: 606px;
   }
 }
 
@@ -38,7 +40,7 @@
   }
 
   @include smd {
-    width: 455px;
+    width: 527px;
   }
 
   @include lg {
@@ -59,8 +61,8 @@
   }
 
   @include smd {
-    font-size: 42px;
-    line-height: 44px;
+    line-height: 51px;
+    font-size: 48px;
     margin-bottom: 17px;
   }
 
@@ -87,10 +89,10 @@
 
     @include smd {
       display: block;
-      line-height: 23px;
-      font-size: 16px;
-      padding-right: 20px;
-      margin-bottom: 80px;
+      line-height: 26px;
+      font-size: 18px;
+      padding-right: 45px;
+      margin-bottom: 94px;
     }
 
     @include lg {
@@ -115,7 +117,7 @@
 
 .books__messengers {
   @include md {
-    margin-left: 1px;
+    margin-left: 2px;
   }
 
   @include lg {
