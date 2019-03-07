@@ -11,26 +11,26 @@
 .order__outer-wrapper {
   background-image: url("#{$path}bg-apple.png");
   background-repeat: no-repeat;
-  background-position: 23px 49px;
+  background-position: 0px -12px;
   padding-bottom: 45px;
-  background-size: 358px auto;
+  background-size: 327px auto;
 
   @include md {
-    background-position: -18px 43px;
-    background-size: 388px auto;
-    padding-bottom: 100px;
+    background-position: -42px -21px;
+    background-size: 354px auto;
+    padding-bottom: 140px;
   }
 
   @include smd {
-    background-position: -28px 44px;
-    background-size: 619px auto;
-    padding-bottom: 155px;
+    background-position: -67px -60px;
+    background-size: 563px auto;
+    padding-bottom: 220px;
   }
 
   @include lg {
-    background-position: -31px 69px, 645px 340px;
-    background-size: 744px auto, 625px auto;
-    padding-bottom: 200px;
+    background-position: -74px -54px;
+    background-size: 673px auto;
+    padding-bottom: 260px;
   }
 }
 

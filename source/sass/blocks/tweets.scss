@@ -50,14 +50,14 @@
   }
 
   @include lg {
-    height: 1214px;
+    height: 660px;
     align-content: space-between;
   }
 }
 
 .tweets__container_linkedin {
   width: 315px;
-  height: 468px;
+  height: 500px;
   margin-bottom: 15px;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
   margin-top: 10px;
@@ -68,7 +68,7 @@
 
   @include smd {
     width: 520px;
-    height: 525px;
+    height: 550px;
   }
 
   @include lg {
@@ -76,10 +76,8 @@
   }
 }
 
-.tweets__container_desktop {
-  display: none;
-
+.tweets__container_mobile {
   @include lg {
-    display: block;
+    display: none;
   }
 }
