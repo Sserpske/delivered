@@ -2,7 +2,7 @@
   width: 375px;
   margin: 0 auto 10px;
   overflow: hidden;
-  height: 272px;
+  height: 288px;
 
   @media (max-width: 374px) {
     width: 350px;
@@ -104,15 +104,15 @@
   background-size: 30px 30px;
 
   &_1 {
-    background-image: url("#{$path}avatar-1.png");
+    background-image: url("#{$path}joti.png");
   }
 
   &_2 {
-    background-image: url("#{$path}avatar-2.png");
+    background-image: url("#{$path}pierre.png");
   }
 
   &_3 {
-    background-image: url("#{$path}avatar-2.png");
+    background-image: url("#{$path}summer.png");
   }
 
   @include md {

@@ -1,22 +1,20 @@
-/*********************************/
-
 .slider {
   position: relative;
   width: 315px;
-  height: 196px;
+  height: 210px;
   margin: 0 auto;
   user-select: none;
 
   @include md {
-    height: 227px;
+    height: 235px;
   }
 
   @include smd {
-    height: 255px;
+    height: 275px;
   }
 
   @include lg {
-    height: 321px;
+    height: 340px;
   }
 }
 

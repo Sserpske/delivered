@@ -71,7 +71,7 @@ a, abbr, acronym, address, applet, article, aside, audio, b, big, blockquote, bo
   display: none;
 
   @include md {
-    width: 298px;
+    width: 149px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -79,11 +79,11 @@ a, abbr, acronym, address, applet, article, aside, audio, b, big, blockquote, bo
   }
 
   @include smd {
-    width: 459px;
+    width: 229px;
   }
 
   @include lg {
-    width: 551px;
+    width: 275px;
   }
 }
 

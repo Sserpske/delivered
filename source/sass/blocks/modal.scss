@@ -174,7 +174,7 @@
 
   @include md {
     display: flex;
-    width: 551px;
+    width: 275px;
   }
 }
 
@@ -185,16 +185,40 @@
 
 .modal__close {
   position: absolute;
-  width: 20px;
-  height: 20px;
-  background-image: url("#{$path}close-button.svg");
-  background-repeat: no-repeat;
+  width: 30px;
+  height: 26px;
   top: 17px;
   right: 17px;
   z-index: 10;
 
   @include md {
-    background-image: url("#{$path}close-button-desktop.svg");
+    top: 40px;
+    right: 40px;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    height: 1px;
+    width: 100%;
+    top: 50%;
+    left: 0;
+    background-color: #ffffff;
+    transform: rotate(45deg);
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    height: 1px;
+    width: 100%;
+    top: 50%;
+    left: 0;
+    background-color: #ffffff;
+    transform: rotate(-45deg);
+  }
+
+  @include md {
     width: 52px;
     height: 52px;
   }
